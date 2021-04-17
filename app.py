@@ -51,4 +51,5 @@ def exam():
 
 app.add_url_rule('/exam','webio_view',webio_view(exam),methods=['GET','POST','OPTIONS'])
 
-app.run(host = 'localhost', port = 5000)
+if __name__ == '__main__':
+    app.run(threaded=True, port=5000)
