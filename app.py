@@ -14,22 +14,22 @@ def exam():
 
     
 
-    name = input("Please enter your name to start the test", type ="text")
+    name = input("Enter your name to start the test", type ="text")
 
 
     q1 = radio("Base language of web?",['javaScript','ASP','PHP','HTML'])
     if q1 =='HTML':
         c+=1
 
-    q2 = radio("Which is not a programming language",['Python','HTML','Scala','Java'])
+    q2 = radio("Which of the following is not a programming language",['Python','HTML','Scala','Java','c++','Kotlin'])
     if q2 =='HTML':
         c+=1
 
-    q3 = radio("Secondery memory is also called _____",['Virtual memory','RAM','ROM','Hard drives'])
+    q3 = radio("Secondery memory is also called as _____",['Virtual memory','RAM','ROM','Hard drives'])
     if q3 =='ROM':
         c+=1
 
-    q4 = radio("functions that is used to get th length of string in Python",['count()','length()','dis()','len()'])
+    q4 = radio("The functions that is used to get the length of string in Python",['count()','length()','dis()','len()'])
     if q4 == 'len()':
         c+=1
 
