@@ -17,12 +17,12 @@ def exam():
     name = input("Please enter your name to start the test", type ="text")
 
 
-    q1 = radio("Base language of web?",['javaScript','ASP','PHP','HTML'])
-    if q1 =='HTML':
+    q1 = radio("Which of these is a front-end developing language?",['javaScript','ASP','PHP','HTML'])
+    if q1 =='javaScript':
         c+=1
 
-    q2 = radio("Which is not a programming language",['Python','HTML','Scala','Java'])
-    if q2 =='HTML':
+    q2 = radio("Which is responsible for backend of a website",['flutter','HTML','Scala','Java'])
+    if q2 =='Java':
         c+=1
 
     q3 = radio("Secondery memory is also called _____",['Virtual memory','RAM','ROM','Hard drives'])
