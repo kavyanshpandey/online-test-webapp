@@ -4,7 +4,7 @@ I made this sample app using python, flask and pywebio. <br>
 Pywebio is a module in python that allow developers to create web application without using HTML and CSS, we can also use pywebio with flask,Djnago and other web framworks.
 
 ## Requirements
-^ click==7.1.2 or later
+* click==7.1.2 or later
 * Flask==1.1.2 or later
 * gunicorn==20.1.0 or later
 * itsdangerous==1.1.0 or later
@@ -29,6 +29,6 @@ Pywebio is a module in python that allow developers to create web application wi
 <br>
 
 ## credits 
-* [kavyanshpandey]
+* kavyanshpandey
 
 ### Thanks
