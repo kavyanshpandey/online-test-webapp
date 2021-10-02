@@ -37,6 +37,10 @@ def exam():
     if q5 == 'Numpy':
         c+=1
 
+    q6 = radio("Which of the following element is responsible for making the text bold in HTML",['<pre>','<a>','<b>','<br>'])
+    if q6 == '<b>':
+        c+=1
+        
     if c>3:
         style(put_text("Congratulations, " + name + ", your score is "+ str(c)),'color:green')
         style(put_text("Result : PASSED"),'color:green')
