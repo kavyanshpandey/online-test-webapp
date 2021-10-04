@@ -36,7 +36,11 @@ def exam():
     q5 = radio("Q5. Which is not a web framework",['Django','React','Numpy','Angular'])
     if q5 == 'Numpy':
         c+=1
-
+        
+    q6 = radio("Q6. Which character is used to represent the closing of a tag in HTML?",['\','!','/','.'])
+    if q6 =='/':
+        c+=1
+        
     if c>3:
         style(put_text("Congratulations, " + name + ", your score is "+ str(c)),'color:green')
         style(put_text("Result : PASSED"),'color:green')
