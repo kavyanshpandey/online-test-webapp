@@ -5,7 +5,7 @@ Pywebio is a module in python that allow developers to create web application wi
 
 # Here are the Steps for running this project.
 1. git clone<br>
-2. pip install requirements.txt<br>
+2. pip install -r requirements.txt<br>
 3. python app.py<br>
 
 # Here is the Snapshots of web app
