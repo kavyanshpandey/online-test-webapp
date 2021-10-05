@@ -37,6 +37,21 @@ def exam():
     if q5 == 'Numpy':
         c+=1
 
+    put_text("Results:")
+    put_table([
+            ["Question", "Correct Answer", "Your Answer"],
+            ["Base language of web?", "HTML", 
+                style(put_text(q1), 'color:{}'.format('green' if q1 == "HTML" else 'red'))],
+            ["Which is not a programming language?", "HTML", 
+                style(put_text(q2), 'color:{}'.format('green' if q2 == "HTML" else 'red'))],
+            ["Secondary memory is also called _____.", "ROM", 
+                style(put_text(q3), 'color:{}'.format('green' if q3 == "ROM" else 'red'))],
+            ["Function that is used to get the length of string in Python.", "len()", 
+                style(put_text(q4), 'color:{}'.format('green' if q4 == "len()" else 'red'))],
+            ["Which is not a web framework?", "Numpy", 
+                style(put_text(q5), 'color:{}'.format('green' if q5 == "Numpy" else 'red'))]
+    ])
+
     if c>3:
         style(put_text("Congratulations, " + name + ", your score is "+ str(c)),'color:green')
         style(put_text("Result : PASSED"),'color:green')
