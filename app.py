@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 def exam():
         
-    c = 0
+    c= 02
 
     
 
