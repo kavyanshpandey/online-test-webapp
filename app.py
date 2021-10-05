@@ -13,7 +13,6 @@ def exam():
     c = 0
 
     
-
     name = input("Please enter your name to start the test ?", type ="text")
 
 
