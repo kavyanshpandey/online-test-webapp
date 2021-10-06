@@ -52,4 +52,4 @@ def exam():
 app.add_url_rule('/','webio_view',webio_view(exam),methods=['GET','POST','OPTIONS'])
 
 if __name__ == '__main__':
-    app.run(debug=True, port= 5000)
+    app.run(debug=True, port= 3000)
