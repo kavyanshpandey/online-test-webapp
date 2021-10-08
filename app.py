@@ -12,6 +12,7 @@ def exam():
     c = 0
     put_markdown('## Welcome To Online Python Test Program ')
 
+
     name = input("Please enter your name to start the test", type ="text")
     if name == '':
         with popup("Please Enter your name"):
@@ -21,21 +22,28 @@ def exam():
     q1 = radio("Base language of web?",['javaScript','ASP','PHP','HTML'])
     put_processbar('bar')
     if q1 == 'HTML':
+
+    name = input("Please enter your name to start the test ?", type ="text")
+
+
+    q1 = radio("Q1. Base language of web?",['javaScript','ASP','PHP','HTML'])
+    if q1 =='HTML':
+
         c+=1
 
-    q2 = radio("Which is not a programming language",['Python','HTML','Scala','Java'])
+    q2 = radio("Q2. Which is not a programming language",['Python','HTML','Scala','Java'])
     if q2 =='HTML':
         c+=1
 
-    q3 = radio("Secondery memory is also called _____",['Virtual memory','RAM','ROM','Hard drives'])
+    q3 = radio("Q3. Secondery memory is also called _____",['Virtual memory','RAM','ROM','Hard drives'])
     if q3 =='ROM':
         c+=1
 
-    q4 = radio("functions that is used to get th length of string in Python",['count()','length()','dis()','len()'])
+    q4 = radio("Q4. functions that is used to get th length of string in Python",['count()','length()','dis()','len()'])
     if q4 == 'len()':
         c+=1
 
-    q5 = radio("Which is not a web framework",['Django','React','Numpy','Angular'])
+    q5 = radio("Q5. Which is not a web framework",['Django','React','Numpy','Angular'])
     if q5 == 'Numpy':
         c+=1
 
