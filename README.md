@@ -1,15 +1,5 @@
 # online-test-webapp
 
-I made this sample app using python, flask and pywebio.
-
-Added Some Exiting Features in this App.
-![](images/empty_name.png)
-![](images/questions.png)
-![](images/great%20results.png)
-![](images/failed%20result.png)
-
-
-
 Hello, I made this sample app. I created this app using programming languages such that python, flask and pywebio. <br>
 
 Pywebio is a module in python that allow developers to create web application without using HTML and CSS, we can also use pywebio with flask,Djnago and other web frameworks.
@@ -20,9 +10,15 @@ Pywebio is a module in python that allow developers to create web application wi
 3. python app.py<br>
 
 # Here is the Snapshots of web app
+Added Some Exiting Features in this App.
+![](images/empty_name.png)
+![](images/questions.png)
+![](images/great%20results.png)
+![](images/failed%20result.png)
 
-![alt text](https://github.com/kavyanshpandey/online-test-webapp/blob/main/Snapshots/20210417_201343.jpg)
-<br>
+
+
+
 
 ### Thank you!
 
