@@ -36,6 +36,14 @@ def exam():
     q5 = radio("Q5. Which is not a web framework",['Django','React','Numpy','Angular'])
     if q5 == 'Numpy':
         c+=1
+        
+    q6 = radio("Q6. React is created by which company",['Google','Microsoft','Facebook','Apple'])
+    if q6 == 'Facebook':
+        c+=1
+
+    q7 = radio("Q7. Angular is created by which company",['Google','Microsoft','Facebook','Apple'])
+    if q7 == 'Google':
+        c+=1
 
     if c>3:
         style(put_text("Congratulations, " + name + ", your score is "+ str(c)),'color:green')
