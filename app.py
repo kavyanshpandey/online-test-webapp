@@ -48,7 +48,7 @@ def exam():
 """A method to validate the name entered by user"""
 def validate_name(name):
 	#removing all spaces from the input name
-	name.replace(" ","")
+	name = name.replace(" ","")
 	#performing validation checks
 	#check 1 : Name must not be empty
 	#check 2 : It should contain only alphabets [a-z] or [A-Z]
