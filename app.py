@@ -17,11 +17,11 @@ def exam():
     name = input("Please enter your name to start the test ?", type ="text")
 
 
-    q1 = radio("Q1. Base language of web?",['javaScript','ASP','PHP','HTML'])
+    q1 = radio("Q1. what is the base language of web?",['javaScript','ASP','PHP','HTML'])
     if q1 =='HTML':
         c+=1
 
-    q2 = radio("Q2. Which is not a programming language",['Python','HTML','Scala','Java'])
+    q2 = radio("Q2. Which isnt a programming language",['Python','HTML','Scala','Java'])
     if q2 =='HTML':
         c+=1
 
