@@ -25,11 +25,11 @@ def exam():
     if q2 =='HTML':
         c+=1
 
-    q3 = radio("Q3. Secondery memory is also called _____",['Virtual memory','RAM','ROM','Hard drives'])
+    q3 = radio("Q3. Secondery memory is also called as _____",['Virtual memory','RAM','ROM','Hard drives'])
     if q3 =='ROM':
         c+=1
 
-    q4 = radio("Q4. functions that is used to get th length of string in Python",['count()','length()','dis()','len()'])
+    q4 = radio("Q4. functions that is used to get th length of string in Python is?",['count()','length()','dis()','len()'])
     if q4 == 'len()':
         c+=1
 
