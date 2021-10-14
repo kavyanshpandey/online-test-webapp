@@ -3,7 +3,7 @@ from pywebio.output import *
 from flask import Flask
 from pywebio.platform.flask import webio_view
 from pywebio import STATIC_PATH
-
+from pywebio.session import *
 
 app = Flask(__name__)
 
@@ -14,6 +14,7 @@ def exam():
   
     put_markdown("<h1>Quiz</h1>")
     name = input("Please enter your name to start the test", type ="text", validate = validate_name)
+
 
     q1 = radio("Q1. Base language of web?",['javaScript','ASP','PHP','HTML'])
     if q1 =='HTML':
@@ -36,15 +37,11 @@ def exam():
         c+=1
 
     if c>3:
-        style(put_text("Congratulations, " + name + ", your score is "+ str(c)),'color:green')
-        style(put_text("Result : PASSED"),'color:green')
-        put_text("Thank You for your participation..")
-
+    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Congratulations !! </h1>"+ name + ", your score is <b>"+ str(c) + "</b><br><br>") ,'color:green;'),style(put_html("<p>Result : <b>PASSED</b></p>"),'color:green'), put_text("Thank You for your participation..")]
+    	popup("Result", content=message, size='large', implicit_close=True, closable=True)
     else:
-        style(put_text("Oops, " +name + ", your score is "+ str(c)),'color:red')
-        style(put_text("Result : FAILED"), 'color:red')
-        put_text("Thank You for your participation..")
-
+    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Oops! " + "</h1>" + name + ", your score is <b>"+ str(c) + "</b><br><br>"),'color:red'), style(put_html("<p>Result : <b>FAILED</b></p>"), 'color:red') , put_text("Thank You for your participation..")]
+    	popup("Result", content=message, size='large', implicit_close=True, closable=True)
 """A method to validate the name entered by user"""
 def validate_name(name):
 	#removing all spaces from the input name
