@@ -11,11 +11,9 @@ app = Flask(__name__)
 def exam():
         
     c = 0
-
-    
-
-    name = input("Please enter your name to start the test ?", type ="text")
-
+  
+    put_markdown("<h1>Quiz</h1>")
+    name = input("Please enter your name to start the test", type ="text", validate = validate_name)
 
     q1 = radio("Q1. Base language of web?",['javaScript','ASP','PHP','HTML'])
     if q1 =='HTML':
@@ -47,6 +45,15 @@ def exam():
         style(put_text("Result : FAILED"), 'color:red')
         put_text("Thank You for your participation..")
 
+"""A method to validate the name entered by user"""
+def validate_name(name):
+	#removing all spaces from the input name
+	name = name.replace(" ","")
+	#performing validation checks
+	#check 1 : Name must not be empty
+	#check 2 : It should contain only alphabets [a-z] or [A-Z]
+	if(name == "" or not(name.isalpha())):
+		return("Please enter a non empty name consisting of alphabets only")
 
 
 app.add_url_rule('/','webio_view',webio_view(exam),methods=['GET','POST','OPTIONS'])
