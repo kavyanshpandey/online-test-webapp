@@ -12,7 +12,8 @@ def exam():
         
     c = 0
   
-    put_markdown("<h1>Quiz</h1>")
+    put_html("<h1>Quiz</h1>")
+
     name = input("Please enter your name to start the test", type ="text", validate = validate_name)
 
 
@@ -37,10 +38,11 @@ def exam():
         c+=1
 
     if c>3:
-    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Congratulations !! </h1>"+ name + ", your score is <b>"+ str(c) + "</b><br><br>") ,'color:green;'),style(put_html("<p>Result : <b>PASSED</b></p>"),'color:green'), put_text("Thank You for your participation..")]
+    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Congratulations !! </h1>"+ name + ", your score is <b>"+ str(c) + "</b><br><br>") ,'color:green;'),style(put_html("<p>Result : <b>PASSED</b></p>"),'color:green'), put_html("<b>Thank You for your participation.</b>")]
     	popup("Result", content=message, size='large', implicit_close=True, closable=True)
     else:
-    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Oops! " + "</h1>" + name + ", your score is <b>"+ str(c) + "</b><br><br>"),'color:red'), style(put_html("<p>Result : <b>FAILED</b></p>"), 'color:red') , put_text("Thank You for your participation..")]
+    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Oops! " + "</h1>" + name + ", your score is <b>"+ str(c) + "</b><br><br>"),'color:red'), style(put_html("<p>Result : <b>FAILED</b></p>"), 'color:red') , put_html("<b>Thank You for your participation.</b><br><br>"), style(put_link('Retry ↺',""), 'color:red;align-content: center;border-radius: 5px;color:#f9faf8;padding: 5px 100px;text-align:center;align-items : center;background-color: white;\
+            background-image: linear-gradient(270deg, #8cf5f5 1%, #0a43f3 100%);')]
     	popup("Result", content=message, size='large', implicit_close=True, closable=True)
 """A method to validate the name entered by user"""
 def validate_name(name):
@@ -51,6 +53,7 @@ def validate_name(name):
 	#check 2 : It should contain only alphabets [a-z] or [A-Z]
 	if(name == "" or not(name.isalpha())):
 		return("Please enter a non empty name consisting of alphabets only")
+
 
 
 app.add_url_rule('/','webio_view',webio_view(exam),methods=['GET','POST','OPTIONS'])
