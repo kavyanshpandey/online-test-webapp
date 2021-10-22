@@ -17,7 +17,7 @@ def exam():
     name = input("Please enter your name to start the test", type ="text", validate = validate_name)
 
 
-    q1 = radio("Q1. Base language of web?",['javaScript','ASP','PHP','HTML'])
+    q1 = radio("Q1. Base language of web?",['JavaScript','ASP','PHP','HTML'])
     if q1 =='HTML':
         c+=1
 
@@ -25,7 +25,7 @@ def exam():
     if q2 =='HTML':
         c+=1
 
-    q3 = radio("Q3. Secondery memory is also called _____",['Virtual memory','RAM','ROM','Hard drives'])
+    q3 = radio("Q3. Secondery memory is also called _____",['Virtual Memory','RAM','ROM','Hard drives'])
     if q3 =='ROM':
         c+=1
 
