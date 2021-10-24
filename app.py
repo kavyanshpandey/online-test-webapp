@@ -52,7 +52,7 @@ def validate_name(name):
 	#check 1 : Name must not be empty
 	#check 2 : It should contain only alphabets [a-z] or [A-Z]
 	if(name == "" or not(name.isalpha())):
-		return("Please enter a non empty name consisting of alphabets only")
+		return("Please enter an alphabet only")
 
 
 
