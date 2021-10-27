@@ -25,11 +25,11 @@ def exam():
     if q2 =='HTML':
         c+=1
 
-    q3 = radio("Q3. Secondery memory is also called _____",['Virtual memory','RAM','ROM','Hard drives'])
+    q3 = radio("Q3. Secondary memory is also called _____",['Virtual memory','RAM','ROM','Hard drives'])
     if q3 =='ROM':
         c+=1
 
-    q4 = radio("Q4. functions that is used to get th length of string in Python",['count()','length()','dis()','len()'])
+    q4 = radio("Q4.  functions that is used to get th length of string in Python",['count()','length()','dis()','len()'])
     if q4 == 'len()':
         c+=1
 
@@ -38,7 +38,7 @@ def exam():
         c+=1
 
     if c>3:
-    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Congratulations !! </h1>"+ name + ", your score is <b>"+ str(c) + "</b><br><br>") ,'color:green;'),style(put_html("<p>Result : <b>PASSED</b></p>"),'color:green'), put_html("<b>Thank You for your participation.</b>")]
+    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Congratulations!! </h1>"+ name + ", your score is <b>"+ str(c) + "</b><br><br>") ,'color:green;'),style(put_html("<p>Result : <b>PASSED</b></p>"),'color:green'), put_html("<b>Thank You for your participation.</b>")]
     	popup("Result", content=message, size='large', implicit_close=True, closable=True)
     else:
     	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Oops! " + "</h1>" + name + ", your score is <b>"+ str(c) + "</b><br><br>"),'color:red'), style(put_html("<p>Result : <b>FAILED</b></p>"), 'color:red') , put_html("<b>Thank You for your participation.</b><br><br>"), style(put_link('Retry ↺',""), 'color:red;align-content: center;border-radius: 5px;color:#f9faf8;padding: 5px 100px;text-align:center;align-items : center;background-color: white;\
@@ -46,7 +46,7 @@ def exam():
     	popup("Result", content=message, size='large', implicit_close=True, closable=True)
 """A method to validate the name entered by user"""
 def validate_name(name):
-	#removing all spaces from the input name
+	#removing all spaces from input name
 	name = name.replace(" ","")
 	#performing validation checks
 	#check 1 : Name must not be empty
