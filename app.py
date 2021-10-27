@@ -14,7 +14,7 @@ def exam():
   
     put_html("<h1>Quiz</h1>")
 
-    name = input("Please enter your name to start the test", type ="text", validate = validate_name)
+    name = input("Please enter your name to start the test!", type ="text", validate = validate_name)
 
 
     q1 = radio("Q1. Base language of web?",['javaScript','ASP','PHP','HTML'])
@@ -38,10 +38,10 @@ def exam():
         c+=1
 
     if c>3:
-    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Congratulations !! </h1>"+ name + ", your score is <b>"+ str(c) + "</b><br><br>") ,'color:green;'),style(put_html("<p>Result : <b>PASSED</b></p>"),'color:green'), put_html("<b>Thank You for your participation.</b>")]
+    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Congratulations !! </h1>"+ name + ", your score is <b>"+ str(c) + "</b><br><br>") ,'color:green;'),style(put_html("<p>Result : <b>PASSED</b></p>"),'color:green'), put_html("<b>Thanks for participating:)</b>")]
     	popup("Result", content=message, size='large', implicit_close=True, closable=True)
     else:
-    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Oops! " + "</h1>" + name + ", your score is <b>"+ str(c) + "</b><br><br>"),'color:red'), style(put_html("<p>Result : <b>FAILED</b></p>"), 'color:red') , put_html("<b>Thank You for your participation.</b><br><br>"), style(put_link('Retry ↺',""), 'color:red;align-content: center;border-radius: 5px;color:#f9faf8;padding: 5px 100px;text-align:center;align-items : center;background-color: white;\
+    	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Oops! " + "</h1>" + name + ", your score is <b>"+ str(c) + "</b><br><br>"),'color:red'), style(put_html("<p>Result : <b>FAILED</b></p>"), 'color:red') , put_html("<b>Thanks for participating:)</b><br><br>"), style(put_link('Retry ↺',""), 'color:red;align-content: center;border-radius: 5px;color:#f9faf8;padding: 5px 100px;text-align:center;align-items : center;background-color: white;\
             background-image: linear-gradient(270deg, #8cf5f5 1%, #0a43f3 100%);')]
     	popup("Result", content=message, size='large', implicit_close=True, closable=True)
 """A method to validate the name entered by user"""
