@@ -22,7 +22,7 @@ def exam():
         c+=1
 
     q2 = radio("Q2. Which is not a programming language",['Python','HTML','Scala','Java'])
-    if q2 =='HTML':
+    if q2 =='CSS':
         c+=1
 
     q3 = radio("Q3. Secondery memory is also called _____",['Virtual memory','RAM','ROM','Hard drives'])
