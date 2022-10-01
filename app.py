@@ -17,12 +17,12 @@ def exam():
     name = input("Please enter your name to start the test", type ="text", validate = validate_name)
 
 
-    q1 = radio("Q1. Base language of web?",['javaScript','ASP','PHP','HTML'])
-    if q1 =='HTML':
+    q1 = radio("Q1. Which of the following is the truncation division operator in Python?",['|','//','%','/'])
+    if q1 =='//':
         c+=1
 
-    q2 = radio("Q2. Which is not a programming language",['Python','HTML','Scala','Java'])
-    if q2 =='HTML':
+    q2 = radio("Q2. Which of the following object is the main entry point to all client-side JavaScript features and APIs?",['Position','Window','Standard','Location'])
+    if q2 =='Window':
         c+=1
 
     q3 = radio("Q3. Secondery memory is also called _____",['Virtual memory','RAM','ROM','Hard drives'])
