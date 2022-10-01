@@ -36,6 +36,14 @@ def exam():
     q5 = radio("Q5. Which is not a web framework",['Django','React','Numpy','Angular'])
     if q5 == 'Numpy':
         c+=1
+	
+    q6 = radio("Q6. Who developed Python Programming Language?",['Wick van Rossum','Rasmus Lerdorf','Guido van Rossum','Niene Stom'])
+    if q6 == 'Numpy':
+        c+=1
+	
+    q7 = radio("Q7. Which of the following is the correct extension of the Python file?",['.python','.p','.py','.pl'])
+    if q7 == 'Numpy':
+        c+=1
 
     if c>3:
     	message = [style(put_html("<h1 style='display:inline;border-bottom:0px'>Congratulations !! </h1>"+ name + ", your score is <b>"+ str(c) + "</b><br><br>") ,'color:green;'),style(put_html("<p>Result : <b>PASSED</b></p>"),'color:green'), put_html("<b>Thank You for your participation.</b>")]
