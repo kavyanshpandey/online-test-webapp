@@ -30,4 +30,5 @@ globals().setdefault('load_entry_point', importlib_load_entry_point)
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    #use regular expression to replace format
     sys.exit(load_entry_point('gunicorn==20.1.0', 'console_scripts', 'gunicorn')())
