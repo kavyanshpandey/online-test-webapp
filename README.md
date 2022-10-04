@@ -1,10 +1,10 @@
 # online-test-webapp
-Hello, I made this sample app. I created this app using programming languages such that python, flask and pywebio. <br>
+Hello, I have made this sample app. I created this app using programming languages such that python, flask and pywebio. <br>
 
 Pywebio is a module in python that allow developers to create web application without using HTML and CSS, we can also use pywebio with flask,Djnago and other web frameworks.
 
 # Here are the Steps for running this project.
-1. git clone<br>
+1. Git Clone<br>
 2. pip install requirements.txt<br>
 3. python app.py<br>
 
