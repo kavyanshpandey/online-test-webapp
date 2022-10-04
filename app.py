@@ -13,7 +13,7 @@ def exam():
     c = 0
   
     put_html("<h1>Quiz</h1>")
-
+#Require user input a name
     name = input("Please enter your name to start the test", type ="text", validate = validate_name)
 
 
