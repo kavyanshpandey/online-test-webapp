@@ -1,11 +1,11 @@
-from pywebio.input import *
+from pywebio.input import *      #importing alll libs/modules
 from pywebio.output import *
 from flask import Flask
 from pywebio.platform.flask import webio_view
 from pywebio import STATIC_PATH
 from pywebio.session import *
 
-app = Flask(__name__)
+app = Flask(__name__)      #app initialization
 
 
 def exam():
@@ -58,5 +58,6 @@ def validate_name(name):
 
 app.add_url_rule('/','webio_view',webio_view(exam),methods=['GET','POST','OPTIONS'])
 
-if __name__ == '__main__':
-    app.run(debug=True, port= 5000)
+#main entry point
+if __name__ == '__main__':      
+    app.run(debug=True, port= 5000)        
