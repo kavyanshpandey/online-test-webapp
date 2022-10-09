@@ -17,11 +17,11 @@ def exam():
     name = input("Please enter your name to start the test", type ="text")
 
 
-    q1 = radio("Base language of web?",['javaScript','ASP','PHP','HTML'])
+    q1 = radio("Base language of web?",['javaScript','ASP','PHP','HTML','Bootstrap'])
     if q1 =='HTML':
         c+=1
 
-    q2 = radio("Which is not a programming language",['Python','HTML','Scala','Java'])
+    q2 = radio("Which is not a programming language",['Python','HTML','Scala','Java','C++'])
     if q2 =='HTML':
         c+=1
 
@@ -29,11 +29,11 @@ def exam():
     if q3 =='ROM':
         c+=1
 
-    q4 = radio("functions that is used to get th length of string in Python",['count()','length()','dis()','len()'])
+    q4 = radio("functions that is used to get th length of string in Python",['count()','length()','dis()','len()','str()'])
     if q4 == 'len()':
         c+=1
 
-    q5 = radio("Which is not a web framework",['Django','React','Numpy','Angular'])
+    q5 = radio("Which is not a web framework",['Django','React','Numpy','Angular'.'Typescript'])
     if q5 == 'Numpy':
         c+=1
 
