@@ -14,7 +14,7 @@ def exam():
   
     put_html("<h1>Quiz</h1>")
 
-    name = input("Please enter your name to start the test", type ="text", validate = validate_name)
+    name = input("Please enter your name to start the Test", type ="text", validate = validate_name)
 
 
     q1 = radio("Q1. Base language of web?",['javaScript','ASP','PHP','HTML'])
@@ -29,7 +29,7 @@ def exam():
     if q3 =='ROM':
         c+=1
 
-    q4 = radio("Q4. functions that is used to get th length of string in Python",['count()','length()','dis()','len()'])
+    q4 = radio("Q4. Functions that is used to get th length of string in Python",['count()','length()','dis()','len()'])
     if q4 == 'len()':
         c+=1
 
@@ -52,7 +52,7 @@ def validate_name(name):
 	#check 1 : Name must not be empty
 	#check 2 : It should contain only alphabets [a-z] or [A-Z]
 	if(name == "" or not(name.isalpha())):
-		return("Please enter a non empty name consisting of alphabets only")
+		return("Please enter a non-empty name consisting of alphabets only")
 
 
 
