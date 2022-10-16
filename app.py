@@ -21,7 +21,7 @@ def exam():
     if q1 =='HTML':
         c+=1
 
-    q2 = radio("Q2. Which is not a programming language",['Python','HTML','Scala','Java'])
+    q2 = radio("Q2. Which is not a programming language ?",['Python','HTML','Scala','Java'])
     if q2 =='HTML':
         c+=1
 
@@ -33,7 +33,7 @@ def exam():
     if q4 == 'len()':
         c+=1
 
-    q5 = radio("Q5. Which is not a web framework",['Django','React','Numpy','Angular'])
+    q5 = radio("Q5. Which is not a web framework ? ",['Django','React','Numpy','Angular'])
     if q5 == 'Numpy':
         c+=1
 
