@@ -7,7 +7,7 @@ from pywebio.session import *
 
 app = Flask(__name__)
 
-
+#the method for asking questions 
 def exam():
         
     c = 0
