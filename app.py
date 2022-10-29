@@ -29,12 +29,16 @@ def exam():
     if q3 =='ROM':
         c+=1
 
-    q4 = radio("Q4. functions that is used to get th length of string in Python",['count()','length()','dis()','len()'])
+    q4 = radio("Q4. What is the function that is used to get th length of string in Python?",['count()','length()','dis()','len()'])
     if q4 == 'len()':
         c+=1
 
-    q5 = radio("Q5. Which is not a web framework",['Django','React','Numpy','Angular'])
+    q5 = radio("Q5. Which is not a web framework?",['Django','React','Numpy','Angular'])
     if q5 == 'Numpy':
+        c+=1
+    
+    q6 = radio("Q6. What is short int in C programming?",['The basic data type of C','Qualifier','Short is the qualifier and int is the basic data type','All of the mentioned'])
+    if q6 == 'Short is the qualifier and int is the basic data type':
         c+=1
 
     if c>3:
